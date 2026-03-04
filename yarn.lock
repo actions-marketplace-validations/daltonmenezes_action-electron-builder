@@ -5,13 +5,13 @@ __metadata:
   version: 8
   cacheKey: 10c0
 
-"@actions/core@npm:^1.10.1":
-  version: 1.10.1
-  resolution: "@actions/core@npm:1.10.1"
+"@actions/core@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "@actions/core@npm:3.0.0"
   dependencies:
-    "@actions/http-client": "npm:^2.0.1"
-    uuid: "npm:^8.3.2"
-  checksum: 7a61446697a23dcad3545cf0634dedbdedf20ae9a0ee6ee977554589a15deb4a93593ee48a41258933d58ce0778f446b0d2c162b60750956fb75e0b9560fb832
+    "@actions/exec": "npm:^3.0.0"
+    "@actions/http-client": "npm:^4.0.0"
+  checksum: ef204ca270011308c3cdbf7da702c0b8220775ea28aec52ddba696443f11afad6e725f5534110f2ef014382ab807b695bb4dcbf307683a0fc6927b3817871f6c
   languageName: node
   linkType: hard
 
@@ -24,13 +24,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@actions/http-client@npm:^2.0.1":
-  version: 2.2.0
-  resolution: "@actions/http-client@npm:2.2.0"
+"@actions/exec@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "@actions/exec@npm:3.0.0"
+  dependencies:
+    "@actions/io": "npm:^3.0.2"
+  checksum: 5e4357cd8538ae8d94ffef653559202e7d18db18c5ecccd2c943b4aab989df9cf4e466fcc3c4405887a3c30b88e87b89fb7c7f5b179622d1192525ec891f0274
+  languageName: node
+  linkType: hard
+
+"@actions/http-client@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "@actions/http-client@npm:4.0.0"
   dependencies:
     tunnel: "npm:^0.0.6"
-    undici: "npm:^5.25.4"
-  checksum: 868fe8529d78beb72f84ea2486e232fa6f66abe00d6ec4591b98c37e762c3d812868a3548638d75b49917961fd10ba1556916b47b1e9e4b55c266e2013c3ae8e
+    undici: "npm:^6.23.0"
+  checksum: 83a2bcfa50b584584e9ec9f6bcc3872aa0b325214e06dc828b17a853e25c23fec77f3262403fd14a1e4365be5d2e266638f945a5459e3a39425e7c2f1789b31e
   languageName: node
   linkType: hard
 
@@ -41,10 +50,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@fastify/busboy@npm:^2.0.0":
-  version: 2.1.0
-  resolution: "@fastify/busboy@npm:2.1.0"
-  checksum: 7bb641080aac7cf01d88749ad331af10ba9ec3713ec07cabbe833908c75df21bd56249bb6173bdec07f5a41896b21e3689316f86684c06635da45f91ff4565a2
+"@actions/io@npm:^3.0.2":
+  version: 3.0.2
+  resolution: "@actions/io@npm:3.0.2"
+  checksum: 25fae323886544f965e90ab9655e3fb60816eb379c78418c4b06a5dc9da27810eb5b0bd0629146dbd5482a03e3c60a5b8713223e4f789abede23df643ddcae8c
   languageName: node
   linkType: hard
 
@@ -122,7 +131,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "action-electron-builder@workspace:."
   dependencies:
-    "@actions/core": "npm:^1.10.1"
+    "@actions/core": "npm:^3.0.0"
     "@actions/exec": "npm:^1.1.1"
     "@types/node": "npm:^20.11.5"
     "@vercel/ncc": "npm:^0.38.1"
@@ -902,12 +911,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"undici@npm:^5.25.4":
-  version: 5.28.2
-  resolution: "undici@npm:5.28.2"
-  dependencies:
-    "@fastify/busboy": "npm:^2.0.0"
-  checksum: 34385ad9b3ba85309972ee3c1b426dcd19b94a5a6aa9c54499b5f48436c0ecc13a9b1e756a7c6a953eaefa9f4263890625ece5f2719fd774b0852204f5e4d5f9
+"undici@npm:^6.23.0":
+  version: 6.23.0
+  resolution: "undici@npm:6.23.0"
+  checksum: d846b3fdfd05aa6081ba1eab5db6bbc21b283042c7a43722b86d1ee2bf749d7c990ceac0c809f9a07ffd88b1b0f4c0f548a8362c035088cb1997d63abdda499c
   languageName: node
   linkType: hard
 
@@ -926,15 +933,6 @@ __metadata:
   dependencies:
     imurmurhash: "npm:^0.1.4"
   checksum: cb811d9d54eb5821b81b18205750be84cb015c20a4a44280794e915f5a0a70223ce39066781a354e872df3572e8155c228f43ff0cce94c7cbf4da2cc7cbdd635
-  languageName: node
-  linkType: hard
-
-"uuid@npm:^8.3.2":
-  version: 8.3.2
-  resolution: "uuid@npm:8.3.2"
-  bin:
-    uuid: dist/bin/uuid
-  checksum: bcbb807a917d374a49f475fae2e87fdca7da5e5530820ef53f65ba1d12131bd81a92ecf259cc7ce317cbe0f289e7d79fdfebcef9bfa3087c8c8a2fa304c9be54
   languageName: node
   linkType: hard
 
